@@ -9,20 +9,33 @@ public class Recipe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @OneToOne(cascade = CascadeType.ALL)
     private Notes notes;
+
     @Lob
     private Byte[] image;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
     private Set<Ingredient> ingredients;
 
     private String description;
+
     private Integer prepTime;
+
     private Integer cookTime;
+
     private Integer servings;
+
     private String source;
+
     private String url;
+
     private String directions;
+
+    // --------------------
+    // GETTER SETTER
+    // --------------------
 
     public Long getId() {
         return id;

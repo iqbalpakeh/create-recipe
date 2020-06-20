@@ -8,7 +8,12 @@ public class MeasurementUnit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String measureUnit;
+
+    // --------------------
+    // GETTER SETTER
+    // --------------------
 
     public Long getId() {
         return id;

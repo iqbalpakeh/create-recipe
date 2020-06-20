@@ -9,12 +9,20 @@ public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @ManyToOne
     private Recipe recipe;
+
     @OneToOne(fetch = FetchType.EAGER)
     private MeasurementUnit uom;
+
     private String description;
+
     private BigDecimal amount;
+
+    // --------------------
+    // GETTER SETTER
+    // --------------------
 
     public Long getId() {
         return id;
