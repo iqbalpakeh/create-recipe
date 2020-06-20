@@ -9,7 +9,7 @@ public class MeasurementUnit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String measureUnit;
+    private String description;
 
     // --------------------
     // GETTER SETTER
@@ -23,12 +23,12 @@ public class MeasurementUnit {
         this.id = id;
     }
 
-    public String getMeasureUnit() {
-        return measureUnit;
+    public String getDescription() {
+        return description;
     }
 
-    public void setMeasureUnit(String measureUnit) {
-        this.measureUnit = measureUnit;
+    public void setDescription(String measureUnit) {
+        this.description = measureUnit;
     }
 
 }
