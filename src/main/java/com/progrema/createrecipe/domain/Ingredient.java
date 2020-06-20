@@ -9,13 +9,10 @@ public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @ManyToOne
     private Recipe recipe;
-
-    @OneToOne
-    private MeasureUnit measureUnit;
-
+    @OneToOne(fetch = FetchType.EAGER)
+    private MeasurementUnit uom;
     private String description;
     private BigDecimal amount;
 
@@ -49,5 +46,13 @@ public class Ingredient {
 
     public void setRecipe(Recipe recipe) {
         this.recipe = recipe;
+    }
+
+    public MeasurementUnit getUom() {
+        return uom;
+    }
+
+    public void setUom(MeasurementUnit uom) {
+        this.uom = uom;
     }
 }

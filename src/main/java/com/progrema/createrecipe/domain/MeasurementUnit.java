@@ -3,12 +3,11 @@ package com.progrema.createrecipe.domain;
 import javax.persistence.*;
 
 @Entity
-public class MeasureUnit {
+public class MeasurementUnit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String measureUnit;
 
     public Long getId() {
@@ -26,4 +25,5 @@ public class MeasureUnit {
     public void setMeasureUnit(String measureUnit) {
         this.measureUnit = measureUnit;
     }
+
 }
