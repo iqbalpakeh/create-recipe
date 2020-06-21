@@ -1,6 +1,7 @@
 package com.progrema.createrecipe.domain;
 
 import javax.persistence.*;
+import java.util.Arrays;
 import java.util.Set;
 
 @Entity
@@ -152,4 +153,22 @@ public class Recipe {
         this.categories = categories;
     }
 
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "id=" + id +
+                ", notes=" + notes +
+                ", image=" + Arrays.toString(image) +
+                ", ingredients=" + ingredients +
+                ", difficulty=" + difficulty +
+                ", categories=" + categories +
+                ", description='" + description + '\'' +
+                ", prepTime=" + prepTime +
+                ", cookTime=" + cookTime +
+                ", servings=" + servings +
+                ", source='" + source + '\'' +
+                ", url='" + url + '\'' +
+                ", directions='" + directions + '\'' +
+                '}';
+    }
 }

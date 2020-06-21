@@ -31,4 +31,11 @@ public class MeasurementUnit {
         this.description = measureUnit;
     }
 
+    @Override
+    public String toString() {
+        return "MeasurementUnit{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

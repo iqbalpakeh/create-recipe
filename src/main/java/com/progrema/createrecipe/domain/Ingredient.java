@@ -63,4 +63,16 @@ public class Ingredient {
     public void setUom(MeasurementUnit uom) {
         this.uom = uom;
     }
+
+    @Override
+    public String toString() {
+        return "Ingredient{" +
+                "id=" + id +
+                ", recipe=" + recipe +
+                ", uom=" + uom +
+                ", description='" + description + '\'' +
+                ", amount=" + amount +
+                '}';
+    }
+
 }

@@ -42,4 +42,14 @@ public class Category {
     public void setRecipes(Set<Recipe> recipe) {
         this.recipes = recipe;
     }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", recipes=" + recipes +
+                '}';
+    }
+
 }

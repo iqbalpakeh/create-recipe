@@ -43,4 +43,12 @@ public class Notes {
         this.recipeNotes = recipeNotes;
     }
 
+    @Override
+    public String toString() {
+        return "Notes{" +
+                "id=" + id +
+                ", recipe=" + recipe +
+                ", recipeNotes='" + recipeNotes + '\'' +
+                '}';
+    }
 }
